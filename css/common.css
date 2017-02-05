@@ -150,3 +150,11 @@ li.active a, li.active a {
 	color: white !important;
 	border-bottom: 0px !important;
 }
+
+.yellowClr {
+	color: #ffd569;
+}
+
+.thematicHr {
+	border-top: dotted 1px;
+}
