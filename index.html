@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+	<script language="javascript" type="text/javascript">
+		function showHide(shID) {
+		   if (document.getElementById(shID)) {
+			  if (document.getElementById(shID+'-show').style.display != 'none') {
+				 document.getElementById(shID+'-show').style.display = 'none';
+				 document.getElementById(shID).style.display = 'block';
+			  }
+			  else {
+				 document.getElementById(shID).style.display = 'none';
+				 document.getElementById(shID+'-show').style.display = 'block';
+			  }
+		   }
+		}
+	</script>
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+	<!--Image Background Page Header -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<!-- /.col.md.1 -->
+			<div class="col-md-10">
+				<img src="images/ASUtopBar.jpg" style='width:100%;' />
+				<img src="images/HeaderGraphic.jpg" style='width:100%;' class="img-fluid" alt="Responsive image"/>
+				<ul class="tab">
+					<li><a href="javascript:void(0)" class="elm active">Test Page Home</a></li>
+					<li><a href="http://asu.edu/ " target="_blank" class="elm">ASU Homepage</a></li>
+					<li><a href="https://www.google.com/" class="elm" target="_blank">Google</a></li>
+					<li><a href="http://www.youtube.com/" class="elm" target="_blank">Youtube</a></li>
+				</ul>
+				<div class="row">
+					<div class="col-md-8 paddedClass">
+						<h2 style="color: #ffd569;">Sidhant Agarwal</h2>
+						<h3>Lorem ipsum dolor sit amet, dignissim morbi imperdiet nisl ut, felis amet tincidunt massa tristique. Egestas cras tortor erat, iaculis ornare curabitur metus, duis quaerat non vulputate.</h3>
+						<hr style="border-top: dotted 1px;"/>
+						<p>Lorem ipsum dolor sit amet, arcu pretium, commodo faucibus, tristique tincidunt sit maecenas consectetuer. Erat integer nibh lacinia fringilla tempus, tincidunt lorem bibendum libero nunc integer, <a href="#" class="aDecoration">vulputate aliquam</a> neque vitae accumsan, vulputate mauris donec vestibulum vivamus ullamcorper. Sit ligula ultricies. Hendrerit fringilla a rhoncus donec quam, nec ipsum condimentum pretium commodo porttitor, nostra bibendum vitae ut dis senectus, sodales elementum amet tristique justo. Ut nam scelerisque aptent massa. Vitae amet aliquam, amet mattis enim augue sem, congue vel, tellus pellentesque euismod ante. </p>
+						<p>Vitae nisl, quisquam vel vel eu a, sollicitudin sed eros. Neque maecenas et. Integer justo vitae a, sed sit sapien, natoque nunc orci, vestibulum vitae justo. Diam ut, erat tristique est aliquet quis accumsan luctus, at rhoncus cras, convallis consequat laoreet, etiam rhoncus lacinia nulla wisi. Taciti aliquam, purus vestibulum diam nibh dui, natoque aenean odio, varius etiam accusantium vitae nisl omnis. Tortor aliquam diam amet, et augue volutpat. Justo velit felis tempor nisl lacus, sapien in morbi eget et quisque magna. Nec arcu, massa ullamcorper sem wisi porttitor, ipsum vel fusce.</p> 
+						<p><a href="#" class="aDecoration">Pulvinar bibendum</a>. Natoque neque turpis integer, dictum nec vel eget neque, netus mollis ullamcorper nunc. Pede commodo, orci neque amet, nunc risus aliquam. Amet nec auctor. Nullam laoreet tincidunt in arcu et, vel risus velit mauris in sodales sed, lacus wisi ligula eget, sociis nulla.</p>
+						<p>Eget laoreet faucibus et accumsan dictum, rutrum sit est eu, amet placerat sollicitudin dis in elementum, sit convallis nec orci. Penatibus id, amet augue non consectetuer odio ipsum mauris. Risus id, suspendisse id varius eu est ipsum. Eros sollicitudin eget, semper integer faucibus pede eu a ullamcorper, proin lacus turpis congue pellentesque phasellus placerat, risus condimentum praesent ullamcorper tristique neque, tellus tincidunt sed justo. Amet pede vehicula id odio consectetuer velit, scelerisque diam amet leo libero, egestas scelerisque id. Est pede neque vestibulum pharetra nam exercitationem, sem sed eu lacus, mauris est diam nulla.</p>
+						<!-- social media buttons start -->
+						<a class="btn btn-social-icon btn-facebook" href="http://facebook.com" target="_blank">
+							<span class="fa fa-facebook"></span>
+						</a>
+						
+						<a class="btn btn-social-icon btn-foursquare" href="http://foursquare.com" target="_blank">
+							<span class="fa fa-foursquare"></span>
+						</a>
+						
+						<a class="btn btn-social-icon btn-tumblr" href="http://tumblr.com" target="_blank">
+							<span class="fa fa-tumblr"></span>
+						</a>
+						
+						<a class="btn btn-social-icon btn-twitter" href="http://twitter.com" target="_blank">
+							<span class="fa fa-twitter"></span>
+						</a>
+						<!-- social media buttons end -->
+					</div>
+					<!-- /.col.md.8 -->
+					
+					<div class="col-md-4">
+						<div class="row center-block">
+							<img src="images/DOS-banners_Homecoming.jpg" />
+						</div>
+						<!-- /.row.center-block-->
+						<div class="row imgTitle">
+							 <b class="titleDecoration">news + events</b>
+						</div>
+						<!-- /.row.imgTitle-->
+						<div id="newsEvents-show" class="row imgTitle">
+							 <p class="newsDecoration">
+								<b>Changemaker Central wins 013 Ashoka U-Cordes Innovation Award for Student Led Change.</b>
+							 </p>
+							 <a href="#"  class="aDecoration" onclick="showHide('newsEvents');return false;">read more</a>
+						</div>
+						<!-- /.newsEvents-show-->
+						<div id="newsEvents" class="row imgTitle more">
+							<p><b>Changemaker Central will receive an Ashoka U – Cordes Innovation Award for its high-impact approach to positive change and innovation in social entrepreneurship at the Ashoka U Exchange from Feb. 21-23 at the University of San Diego when more than 150 colleges and universities from more than 40 countries share social entrepreneur best practices and advance collaborative projects across campuses</b></p>
+							<p><a href="#" id="newsEvents-hide" class="aDecoration" onclick="showHide('newsEvents');return false;">less</a></p>
+						</div>
+						<!-- /.newsEvents-->					
+					</div>
+					<!-- /.col.md.4 -->
+				</div>
+				<!-- /.row -->
+				
+				
+				<hr style="border-top: dotted 1px;"/>
+			</div>
+			<!-- /.col.md.10-->
+			
+			<div class="col-md-1"></div>
+			<!-- /.col.md.1 -->
+			
+			<div class="row">
+				<footer>
+					<div class="footer" id="footer">
+						<div class="container">
+							<div class="row aDecoration">
+								<div class="col-lg-2  col-md-2 col-sm-6 col-xs-12 ">
+									<h3><a href="https://my.asu.edu" class="grayASU" target="_blank">My ASU</a></h3>
+									<ul class="ulMyAasu">
+										<li>
+											<div class="input-append newsletter-box text-left">
+												<i>Find all your personalized information related to ASU in one place.</i>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+									<ul class="ulDecoration">
+										<li > <a href="#" class="blackCls"><b>admission</b></a> </li>
+										<li> <a href="#">freshman </a> </li>
+										<li> <a href="#">transfer </a> </li>
+										<li> <a href="#">international </a> </li>
+										<li> <a href="#">readmission </a> </li>
+										<li> <a href="#">graduate </a> </li>
+										<li> <a href="#">law </a> </li>
+									</ul>
+								</div>
+								<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+									<ul class="ulDecoration">
+										<li > <a href="#" class="blackCls"><b>paying for college</b></a> </li>
+										<li> <a href="#">costs </a> </li>
+										<li> <a href="#">financial aid </a> </li>
+										<li> <a href="#">scholarships </a> </li>
+										<li> <a href="#">tuition </a> </li>
+										<li> <a href="#">billing </a> </li>
+										<li> <a href="#">residency </a> </li>
+									</ul>
+								</div>
+								<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+									<ul class="ulDecoration">
+										<li > <a href="#" class="blackCls"><b>academics</b></a> </li>
+										<li> <a href="#">majors </a> </li>
+										<li> <a href="#">registration </a> </li>
+										<li> <a href="#">asu bookstore </a> </li>
+										<li> <a href="#">tutoring & advising </a> </li>
+										<li> <a href="#">records & grades </a> </li>
+										<li> <a href="#">course catalog </a> </li>
+										<li> <a href="#">graduation </a> </li>
+									</ul>
+								</div>
+								<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+									<ul class="ulDecoration">
+										<li > <a href="#" class="blackCls"><b>life at asu</b></a> </li>
+										<li> <a href="#">asu events </a> </li>
+										<li> <a href="#">health & wellness </a> </li>
+										<li> <a href="#">housing & dining </a> </li>
+										<li> <a href="#">clubs & activities </a> </li>
+										<li> <a href="#">safety </a> </li>
+										<li> <a href="#">student support </a> </li>
+										<li> <a href="#">transportation </a> </li>
+									</ul>
+								</div>
+								<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+									<ul class="ulDecoration">
+										<li > <a href="#" class="blackCls"><b>jobs & careers</b></a> </li>
+										<li> <a href="#"> career services </a> </li>
+										<li> <a href="#"> sun devil careerlink </a> </li>
+										<li> <a href="#"> student employment </a> </li>
+										<li> <a href="#"> graduate research & teaching assistantships </a> </li>
+									</ul>
+								</div>
+							</div>
+							<!--/.row--> 
+						</div>
+						<!--/.container--> 
+					</div>
+					<!--/.footer-->
+				</footer>
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="footDiv">Copyright & Trademark | Accessiblity | Privacy | Emergency | Contact ASU &nbsp;</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</body>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</html>
