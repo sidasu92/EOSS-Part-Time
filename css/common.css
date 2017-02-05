@@ -82,7 +82,7 @@ li.active a, li.active a {
 
 .grayASU {
 	color:gray;
-	border-bottom: 3px solid gray;
+	text-decoration: underline;
 }
 
 .blackCls {
@@ -90,8 +90,8 @@ li.active a, li.active a {
 }
 
 .grayASU:hover{
-	color:black;
-	border-bottom: 1px dotted black;
+	color:#d23153;
+	border-bottom: 1px dotted #d23153;
 }
 
 .paddedClass {
